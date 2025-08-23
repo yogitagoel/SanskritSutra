@@ -81,8 +81,34 @@ def render_text(text, font, color=(0, 0, 0)):
     data = img.tobytes()
     return pygame.image.fromstring(data, size, mode)
 
+def draw_navbar():
+    # Navbar background
+    pygame.draw.rect(screen, (30, 30, 60), (0, 0, WIDTH, 60))
+
+    # Question number
+    q_text = f"प्रश्न: {current_index+1}/{len(sentences)}"
+    q_surface = render_text(q_text, sentence_font, WHITE)
+    screen.blit(q_surface, (20, 15))
+
+    # Points
+    points_text = f"अंक: {points}"
+    points_surface = render_text(points_text, sentence_font, WHITE)
+    screen.blit(points_surface, (WIDTH//2 - 50, 15))
+
+    level_rect=render_text("स्तर 1",sentence_font,WHITE).get_rect(topleft=(WIDTH//2 + 200,15))
+    pygame.draw.rect(screen,(80,80,180),level_rect.inflate(20,10),border_radius=8)
+    screen.blit(render_text("स्तर 1",sentence_font,WHITE),level_rect)
+
+    # Concept button
+    concept_text = "सिद्धान्त"
+    concept_surface = render_text(concept_text, sentence_font, WHITE)
+    concept_rect = concept_surface.get_rect(topright=(WIDTH-20, 15))
+    pygame.draw.rect(screen, (80, 80, 180), concept_rect.inflate(20, 10), border_radius=8)
+    screen.blit(concept_surface, concept_rect)
+
 def draw_game():
     screen.fill(WHITE)
+    draw_navbar()
     # Draw sentence
     sentence_surface = render_text(sentence, sentence_font, BLACK)
     sentence_rect = sentence_surface.get_rect(center=(WIDTH // 2, 100))
