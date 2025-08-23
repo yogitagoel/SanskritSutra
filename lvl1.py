@@ -33,7 +33,7 @@ result_font = ImageFont.truetype(FONT_PATH, 40)
 button_rect = pygame.Rect(WIDTH//2 - 60, HEIGHT - 150, 120, 50)
 show_next = False 
 
-with open("data.json", "r", encoding="utf-8") as f:
+with open("dataset.json", "r", encoding="utf-8") as f:
     sentences = json.load(f)
 
 # Game Data
