@@ -8,6 +8,28 @@ SanskritSutra is an educational toolkit designed to make learning Sanskrit fun a
 - **Gamified Learning:** Experience language learning as a playful challenge, not just memorization.
 - **Fun for All Ages:** Designed to appeal to learners of all levels who wish to explore Sanskrit with joy and engagement.
 
+## How to Play
+
+1. **Select Letters:**  
+   - Use your **mouse** to click on letters and arrange them in the correct order to form the required word.
+
+2. **Submit Your Answer:**  
+   - Once you think the word is correct, press **Enter**.  
+
+3. **Correct Answer:**  
+   - You will see a button labeled **"आगे"** (meaning *Next*).  
+   - Click it to move on to the next question.  
+   - You earn **+10 points** for every correct answer.  
+
+4. **Wrong Answer:**  
+   - If your answer is incorrect, you will see **"अनुचित"** (meaning *Wrong*).  
+   - You will need to reattempt the same question until you get it right.  
+
+5. **Erase Response:**  
+   - Use the **Backspace key** to retry.  
+
+---
+
 ## Future Plans
 
 - **Add Game Levels:** Make the learning process progressive and more rewarding.
