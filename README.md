@@ -28,8 +28,6 @@ SanskritSutra is an educational toolkit designed to make learning Sanskrit fun a
 5. **Erase Response:**  
    - Use the **Backspace key** to retry.  
 
----
-
 ## Future Plans
 
 - **Add Game Levels:** Make the learning process progressive and more rewarding.
